@@ -1,0 +1,19 @@
+name: Base64 Encode
+description: Base64 Encode a value
+
+branding:
+  icon: alert-circle
+  color: gray-dark
+
+inputs:
+  value:
+    description: Value to encode
+    required: true
+
+outputs:
+  value:
+    description: The encoded value
+
+runs:
+  using: node12
+  main: lib/index.js
